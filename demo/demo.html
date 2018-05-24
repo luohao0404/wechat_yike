@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<p id="qText"></p>
+<p id="selectionA"></p>
+
+<script>
+var x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+
+
+// TODO
+var questionSet = {
+	"1":{
+    	"qText":"请问您要将一克送给生命中哪位特别的人？",
+    	"selection":{"a1":"亲人","a2":"朋友","a3":"爱人","a4":"自己"}
+    	},
+    "2":{
+    	"qText":"请问您要与几人分享一克？",
+    	"selection":{"a1":"一人食","a2":"2-4人","a3":"6-8人"}
+        },
+    "3":{
+    	"qText":"请问您是在什么场景下分享一克？",
+    	"selection":{"a1":"温馨的家庭聚餐","a2":"朋友生日会或集体派对","a3":"约会或纪念日想给她一个惊喜"}
+        },
+    "4":{
+    	"qText":"请问您分享的对象口味喜好？",
+    	"selection":{"a1":"甜食狂热者","a2":"喜欢酸酸甜甜不太腻"}
+        },
+    "5":{
+    	"qText":"请问您分享对象的性格？",
+    	"selection":{"a1":"中规中矩保守派","a2":"活泼有趣个性派"}
+        },
+    "6":{
+    	"qText":"请问您的对象口味喜好？",
+    	"selection":{"a1":"甜食狂热者","a2":"喜欢酸酸甜甜不太腻"}
+        },
+    "7":{
+    	"qText":"请问您的性格？",
+    	"selection":{"a1":"中规中矩保守派","a2":"活泼有趣个性派"}
+        }
+};
+
+
+// TODO
+var results = {
+	"1a1-2a1-3a1-4a1-5a1":"R1",
+	"1a1-2a1-3a1-4a1-5a1":"R2",
+	"1a1-2a1-3a1-4a1-5a1":"R3",
+	"1a1-2a1-3a1-4a1-5a1":"R4",
+	"1a1-2a1-3a1-4a1-5a1":"R5"
+};
+
+
+// TODO
+function putSelected(set, selected){
+	set += selected;
+	return set;
+}
+
+
+var data = getNextQuestion("1", questionSet);
+
+document.getElementById("qText").innerHTML = data["qText"];
+
+var selections = "";
+Object.keys(data["selection"]).forEach(function (key) {
+  selections += data["selection"][key];
+});
+
+
+
+document.getElementById("selectionA").innerHTML = selections;
+
+
+
+// TODO
+function getNextQuestion(qNum, questionSet){
+
+	var data;
+	var nextNumInt;
+	var nextNum;
+
+	// special logic
+	if(){
+	}
+	else {
+	
+		nextNumInt = parseInt(qNum) + 1;
+    	nextNum = nextNumInt.toString();
+	}
+    
+    
+    
+    data = questionSet[nextNum];
+    
+	return data;
+
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
