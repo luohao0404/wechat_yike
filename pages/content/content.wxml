@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view class="question-div">
+    <text class="question-lbl" decode="true">{{question}}</text>
+  </view>
+
+  <view class="btn-div" wx:for="{{buttons}}" wx:key="item">
+
+    <button class="btn" bindtap="ansClick" id="{{item.id}}">{{item.text}}</button>
+
+  </view>
+</view>

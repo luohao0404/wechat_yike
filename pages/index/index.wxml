@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="welcome-logo-div">
+    <image class="welcome-logo" mode="aspectFit" src="/img/logo.png"></image>
+  </view>
+
+    <view class="welcome-title">
+    <text>{{title}}</text>
+    </view>
+
+  <view class="welcome-msg">
+    <text decode="true">{{welcomeMsg}}</text>
+  </view>
+
+  <view class="entry-btn-div">
+    <button class="entry-btn" plain="true" bindtap="start">{{buttonText}}</button>
+  </view>
+</view>

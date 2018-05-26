@@ -1,0 +1,37 @@
+/**index.wxss**/
+.result-logo-div {
+  margin-bottom: 30rpx;
+}
+
+.result-title {
+  margin-bottom: 100rpx;
+}
+
+.result-logo {
+  width: 50px; 
+  height: 50px;
+  margin: 0;
+}
+
+.result-msg {
+  width: 75%;
+  color: #F17816;
+  line-height:2.0rem;
+  letter-spacing: 5rpx;
+  margin-top: 100rpx;
+  margin-bottom: 180rpx;
+  height: 15vh;
+  font-size: 70rpx;
+  
+  display: flex; 
+  flex-direction: row;  
+  justify-content: center; 
+}
+
+.jump-btn-div {
+  width: 75%;
+}
+
+.jump-btn {
+  color: black;
+}
